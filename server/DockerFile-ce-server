@@ -1,0 +1,9 @@
+FROM python:3
+
+ADD server.py /
+
+RUN pip install Flask
+RUN pip install requests
+RUN pip install flask-restful
+
+CMD [ "python" , "./server.py" ]
